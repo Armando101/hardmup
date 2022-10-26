@@ -2,19 +2,12 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'lib-hello-world',
-  template: `
-    <p>
-      hello-world works!
-    </p>
-  `,
-  styles: [
-  ]
+  templateUrl: './hello-world.component.html',
+  styleUrls: ['hello-world.component.scss'],
 })
 export class HelloWorldComponent implements OnInit {
+  showButton = false;
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }
