@@ -12,6 +12,14 @@
         "dist/alert/alert",
         "dist/alert"
       ],
+      "hardmup": [
+        "dist/hardmup/hardmup",
+        "dist/hardmup"
+      ],
+      "hardmuping": [
+        "dist/hardmuping/hardmuping",
+        "dist/hardmuping"
+      ],
       "hello-world": [
         "dist/hello-world/hello-world",
         "dist/hello-world"

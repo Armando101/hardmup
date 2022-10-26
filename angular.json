@@ -65,7 +65,69 @@
           }
         }
       }
+    },
+    "hardmup": {
+      "projectType": "library",
+      "root": "projects/hardmup",
+      "sourceRoot": "projects/hardmup/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/hardmup/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/hardmup/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/hardmup/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/hardmup/src/test.ts",
+            "tsConfig": "projects/hardmup/tsconfig.spec.json",
+            "karmaConfig": "projects/hardmup/karma.conf.js"
+          }
+        }
+      }
+    },
+    "hardmuping": {
+      "projectType": "library",
+      "root": "projects/hardmuping",
+      "sourceRoot": "projects/hardmuping/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/hardmuping/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/hardmuping/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/hardmuping/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/hardmuping/src/test.ts",
+            "tsConfig": "projects/hardmuping/tsconfig.spec.json",
+            "karmaConfig": "projects/hardmuping/karma.conf.js"
+          }
+        }
+      }
     }
   },
-  "defaultProject": "hello-world"
+  "defaultProject": "hardmuping"
 }
