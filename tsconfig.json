@@ -8,6 +8,10 @@
     "strict": true,
     "noImplicitOverride": true,
     "paths": {
+      "alert": [
+        "dist/alert/alert",
+        "dist/alert"
+      ],
       "hello-world": [
         "dist/hello-world/hello-world",
         "dist/hello-world"
