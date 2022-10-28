@@ -4,10 +4,10 @@ import { Component, OnInit } from '@angular/core';
   selector: 'lib-alert',
   template: `
     <div>
-      <p>alert works!</p>
+      <ng-content></ng-content>
     </div>
   `,
-  styleUrls: ['alert.component.scss'],
+  styleUrls: ['./alert.component.scss'],
 })
 export class AlertComponent implements OnInit {
   constructor() {}
